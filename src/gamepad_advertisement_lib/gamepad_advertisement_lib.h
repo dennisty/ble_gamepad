@@ -23,15 +23,17 @@ static uint8_t adv_data[] = {
     'L',
     'E',
     // Battery Service UUID (0x180f)
-    0x03,
+    0x05,
     BLUETOOTH_DATA_TYPE_COMPLETE_LIST_OF_16_BIT_SERVICE_CLASS_UUIDS,
-    0x0f,
+    0x0F,
+    0x18,
+    0x12,
     0x18,
     // Appearance Value (Sensor)
     0x03,
     BLUETOOTH_DATA_TYPE_APPEARANCE,
-    0x40,
-    0x05,
+    0xC4,
+    0x03,
 };
 void begin_gamepad_advertisement(void);
 

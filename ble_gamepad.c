@@ -11,7 +11,11 @@ int main()
 {
     stdio_init_all();
 
-    setup_bluetooth(profile_data);
+    if (setup_bluetooth(profile_data))
+    {
+        printf("Failed to setup Bluetooth! Aborting...");
+        return -1;
+    }
 
     begin_gamepad_advertisement();
 
