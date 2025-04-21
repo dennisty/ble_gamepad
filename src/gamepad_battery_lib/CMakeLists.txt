@@ -1,0 +1,5 @@
+add_library(gamepad_battery_lib gamepad_battery_lib.c)
+
+target_include_directories(gamepad_battery_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_link_libraries(gamepad_battery_lib pico_stdlib)
