@@ -21,7 +21,6 @@ int main()
 
     while (true)
     {
-        printf("Battery level: %d\n", get_current_battery_level());
         sleep_ms(1000);
     }
 }

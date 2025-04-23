@@ -22,14 +22,16 @@ static uint8_t adv_data[] = {
     'B',
     'L',
     'E',
-    // Battery Service UUID (0x180f)
-    0x05,
+    // Service UUIDs (HID over GATT)
+    0x07,
     BLUETOOTH_DATA_TYPE_COMPLETE_LIST_OF_16_BIT_SERVICE_CLASS_UUIDS,
-    0x0F,
+    0x12, // HID
     0x18,
-    0x12,
+    0x0F, // Battery
     0x18,
-    // Appearance Value (Sensor)
+    0x0A, // Device Information
+    0x18,
+    // Appearance Value (HID - Gamepad)
     0x03,
     BLUETOOTH_DATA_TYPE_APPEARANCE,
     0xC4,

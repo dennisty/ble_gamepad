@@ -2,7 +2,7 @@
 
 void begin_gamepad_advertisement(void)
 {
-    // TODO: Understand these parameters better and maybe define as constants in header file
+    // TODO: Understand these parameters better and define as constants in header file
     uint16_t adv_int_min = 800;
     uint16_t adv_int_max = 800;
     uint8_t adv_type = 0;

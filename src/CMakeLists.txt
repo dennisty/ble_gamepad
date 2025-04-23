@@ -1,3 +1,4 @@
-add_subdirectory(gamepad_battery_lib)
-add_subdirectory(gamepad_advertisement_lib)
 add_subdirectory(bt_stack_setup_lib)
+add_subdirectory(gamepad_advertisement_lib)
+add_subdirectory(gamepad_battery_lib)
+add_subdirectory(gamepad_device_information_lib)
