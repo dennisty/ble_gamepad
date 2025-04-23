@@ -62,6 +62,7 @@ target_link_libraries(ble_gamepad
         bt_stack_setup_lib
         gamepad_battery_lib
         gamepad_advertisement_lib
+        gamepad_device_information_lib
         )
 
 pico_add_extra_outputs(ble_gamepad)
