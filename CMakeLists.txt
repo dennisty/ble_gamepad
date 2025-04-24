@@ -60,9 +60,7 @@ pico_btstack_make_gatt_header(ble_gamepad PRIVATE "${CMAKE_CURRENT_LIST_DIR}/ble
 # Add any user requested libraries
 target_link_libraries(ble_gamepad 
         bt_stack_setup_lib
-        gamepad_battery_lib
         gamepad_advertisement_lib
-        gamepad_device_information_lib
         )
 
 pico_add_extra_outputs(ble_gamepad)

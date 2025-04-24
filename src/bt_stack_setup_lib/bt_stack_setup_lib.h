@@ -6,6 +6,9 @@
 #include "btstack.h"
 #include "pico/btstack_cyw43.h"
 #include "pico/cyw43_arch.h"
+#include "gamepad_advertisement_lib.h"
+#include "gamepad_device_information_lib.h"
+#include "gamepad_hid_lib.h"
 
 // HCI Callback Registration
 static btstack_packet_callback_registration_t hci_event_callback_registration;

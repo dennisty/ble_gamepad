@@ -4,6 +4,6 @@
 #include "btstack.h"
 #include "pico/stdlib.h"
 
-void set_device_information(void);
+void setup_device_information_service(void);
 
 #endif

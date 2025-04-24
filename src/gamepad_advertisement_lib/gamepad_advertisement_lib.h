@@ -4,6 +4,7 @@
 #include "btstack.h"
 #include "pico/stdlib.h"
 
+// TODO: Change to extern and define in .c file?
 static uint8_t adv_data[] = {
     // Flags: General Discoverable Mode
     0x02,

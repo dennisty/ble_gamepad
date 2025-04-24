@@ -1,6 +1,4 @@
 #include "bt_stack_setup_lib.h"
-#include "gamepad_advertisement_lib.h"
-#include "gamepad_device_information_lib.h"
 
 static void bt_packet_handler(uint8_t packet_type, uint16_t channel, uint8_t *packet, uint16_t size)
 {
@@ -47,8 +45,11 @@ int8_t setup_bluetooth(uint8_t const profile_data[])
     // TODO: Mocking this value until hardware implementation is done
     battery_service_server_init(42);
 
-    set_device_information();
+    setup_device_information_service();
 
+    setup_hid_service();
+
+    hids_device_register_packet_handler(bt_packet_handler);
     hci_event_callback_registration.callback = &bt_packet_handler;
     hci_add_event_handler(&hci_event_callback_registration);
 
