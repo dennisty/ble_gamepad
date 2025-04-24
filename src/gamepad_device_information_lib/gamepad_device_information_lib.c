@@ -1,6 +1,6 @@
 #include "gamepad_device_information_lib.h"
 
-void set_device_information(void)
+void setup_device_information_service(void)
 {
     device_information_service_server_init();
 

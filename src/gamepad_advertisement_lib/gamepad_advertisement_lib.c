@@ -10,5 +10,8 @@ void begin_gamepad_advertisement(void)
     memset(null_addr, 0, 6);
     gap_advertisements_set_params(adv_int_min, adv_int_max, adv_type, 0, null_addr, 0x07, 0x00);
     gap_advertisements_set_data(sizeof(adv_data), (uint8_t *)adv_data);
+    // TODO: Randomizes MAC address for development workflow purposes
+    gap_random_address_set_mode(GAP_RANDOM_ADDRESS_NON_RESOLVABLE);
+
     gap_advertisements_enable(1);
 }
